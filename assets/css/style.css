@@ -1,0 +1,149 @@
+/* Universal */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Merriweather", serif;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+a,
+h2 {
+    color: #ff7357;
+}
+
+.rounded-50 {
+    border-radius: 50%;
+}
+
+/* Website Header */
+
+header {
+    display: inline;
+    text-align: center;
+}
+
+header .jumbotron {
+    font-size: 1.25rem;
+    padding: 3.75rem;
+    text-align: center;
+    color: white;
+}
+
+header nav {
+    top: 0;
+    padding: 0.25rem;
+    position: sticky;
+    background-color: #ff7357;
+    transition: 0.5s ease-in-out;
+}
+
+.scrolled {
+    background-color: #1a1a1a;
+    transition: 0.5s ease-in-out;
+}
+
+header nav ul {
+    padding-inline: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+header nav li {
+    list-style-type: none;
+}
+
+header nav a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.scrolled a {
+    color: #ff7357;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+}
+
+/* Website Content */
+
+main {
+    padding: 1.25rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+main #content {
+    flex: 3;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+main aside {
+    flex: 1;
+}
+
+main #about-image {
+    min-width: 25%;
+    max-width: 50%;
+}
+
+.content-card {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: #2b2b2b;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+
+    main #about-image {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main aside {
+        align-self: stretch;
+    }
+
+    main #about-image {
+        width: 50%;
+    }
+}
+
+/* Website Footer */
+
+footer {
+    padding: 0.5rem;
+    color: #ff7357;
+    text-align: center;
+}
+
+.about header {
+    text-align: center;
+}
